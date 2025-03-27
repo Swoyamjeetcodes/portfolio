@@ -329,17 +329,18 @@ section {
 
 .experience-details-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align content to the top */
+  text-align: center; /* Ensure text is centered */
 }
 
 .article-container {
+  width: 100%; /* Ensure full width */
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: center; /* Center articles horizontally */
   gap: 2.5rem;
-  justify-content: space-around;
 }
 
 article {
@@ -362,12 +363,15 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  border-radius: 1rem;
+  width: 100%;
+  height: 300px; /* Fixed height for both project images */
+  object-fit: cover; /* Ensures image covers the area without distortion */
 }
 
 .project-title {
@@ -379,6 +383,7 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+
 
 /* CONTACT */
 
